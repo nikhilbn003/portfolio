@@ -1,18 +1,28 @@
 import React from 'react';
-import './styles.css';
-import Header from './components/Header';
-// import About from './components/About';
-// import Projects from './components/Projects';
-// import Contact from './components/Contact';
-// import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import PageContent from './components/PageContent';
+import About from './pages/About';
+import Home from './pages/Home';
+import Skills from './pages/Skills';
 
-const App = () => {
+
+
+function App() {
   return (
+    <>
     <div>
-      <Header />
-      <h2>hello</h2>
-    </div>
+    <NavBar />
+    <PageContent/>
+      <Home/>
+      <About/>
+      <Skills/>
+      
+      </div>
+        
+      
+    </>
   );
-};
+}
 
 export default App;
+
