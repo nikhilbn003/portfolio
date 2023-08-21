@@ -72,7 +72,7 @@ const Home = () => {
         {/* Text content */}
         <div className="p-4 text-center mt-3">
           <motion.h1
-            className="text-4xl font-semibold "
+            className="text-4xl font-semibold animate-bounce "
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 1 }}
           >
