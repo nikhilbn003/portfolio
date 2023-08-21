@@ -1,72 +1,3 @@
-// // import React from 'react';
-// // import { Link } from 'react-router-dom';
-
-// // const NavBar = () => {
-// //   return (
-// //     <nav className="bg-white text-gray-700 shadow-md">
-// //       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-// //         <Link to="/" className="text-2xl font-semibold flex items-center mr-4">
-// //          Nikhil 
-// //         </Link>
-// //         <div className="space-x-4">
-// //           <Link to="/" className="text-sm font-medium hover:text-gray-300">
-// //             Home
-// //           </Link>
-// //           <Link to="/about" className="text-sm font-medium hover:text-gray-300">
-// //             About
-// //           </Link>
-// //           <Link to="/contact" className="text-sm font-medium hover:text-gray-300">
-// //             Contact
-// //           </Link>
-// //           <Link to="/skills" className="text-sm font-medium hover:text-gray-300">
-// //             Skills
-// //           </Link>
-// //           <Link to="/skills" className="text-sm font-medium hover:text-gray-300">
-// //            Contact
-// //           </Link>
-// //         </div>
-// //       </div>
-// //     </nav>
-// //   );
-// // };
-
-// // export default NavBar;
-
-
-// import React from 'react';
-
-// const NavBar = () => {
-//   return (
-//     <nav className="bg-white text-gray-700 shadow-md">
-//       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-//         <a href="/" className="text-2xl font-semibold flex items-center mr-4">
-//          Nikhil 
-//         </a>
-//         <div className="space-x-4">
-//           <a href="/" className="text-sm font-medium hover:text-gray-300">
-//             Home
-//           </a>
-//           <a href="#about" className="text-sm font-medium hover:text-gray-300">
-//             About
-//           </a>
-//           <a href="#contact" className="text-sm font-medium hover:text-gray-300">
-//             Contact
-//           </a>
-//           <a href="#skills" className="text-sm font-medium hover:text-gray-300">
-//             Skills
-//           </a>
-//           <a href="#contact" className="text-sm font-medium hover:text-gray-300">
-//            Contact
-//           </a>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavBar;
-
-
 import React, { useState } from 'react';
 
 const NavBar = () => {
@@ -94,9 +25,9 @@ const handleLinkClick = (section) => {
 
   
   return (
-    <nav className="bg-white text-gray-700 shadow-md fixed top-0 left-0 right-0 z-10">
+    <nav className="bg-white text-gray-700 shadow-md fixed top-0 left-0 right-0 z-10 rounded-lg">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a href="/" className="text-2xl font-semibold flex items-center mr-4">
+        <a href="/" className="text-2xl font-semibold flex items-center mr-4 animate-pulse">
           Nikhil 
         </a>
         <div className="space-x-4">
@@ -113,17 +44,18 @@ const handleLinkClick = (section) => {
             About
           </button>
           <button
-            onClick={() => handleLinkClick('contact')}
-            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'contact' ? 'active' : ''}`}
-          >
-            Contact
-          </button>
-          <button
             onClick={() => handleLinkClick('skills')}
             className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'skills' ? 'active' : ''}`}
           >
             Skills
           </button>
+          <button
+            onClick={() => handleLinkClick('contact')}
+            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'contact' ? 'active' : ''}`}
+          >
+            Contact
+          </button>
+         
         </div>
       </div>
     </nav>
