@@ -59,9 +59,10 @@ const Home = () => {
         <div className="md:w-1/2 md:order-2">
           <div className="hidden md:flex md:flex-col md:justify-center md:items-center md:text-left md:pr-8">
             {/* Animate name on hover */}
-            <h2 className="text-4xl text-[#287676] font-bold">Welcome to my portfolio</h2>
+            <h2 className="text-4xl text-[#287676] font-bold" data-aos="fade-left">Welcome to my portfolio</h2>
             <motion.h1
               className="text-3xl text-[#287676] font-semibold mt-3 "
+              data-aos="flip-up"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 1 }}
             >
@@ -90,6 +91,7 @@ const Home = () => {
               {textArray.map((word, index) => (
                 <span
                   key={index}
+                  data-aos="fade-left"
                   className={`inline-block ml-1 ${
                     showText
                       ? "transition-transform duration-500 transform translate-x-0"
@@ -97,7 +99,7 @@ const Home = () => {
                   }`}
                   style={{ transitionDelay: `${index * 0.2}s` }}
                 >
-                  {word}{" "}
+                  {word}
                 </span>
               ))}
             </p>
@@ -105,7 +107,7 @@ const Home = () => {
         </div>
 
         {/* Right section for the image */}
-        <div className="w-full md:w-1/2 md:order-1 relative">
+        <div className="w-full md:w-1/2 md:order-1 relative" data-aos="fade-right">
           {/* Place your image here */}
           <motion.img
             src={photo}
@@ -121,7 +123,7 @@ const Home = () => {
         </div>
 
         {/* Sidebar with icons */}
-        <div className="md:w-1/12 md:order-3 mr-3 lg:mr-0 md:mt-0 ml-6">
+        <div className="md:w-1/12 md:order-3 mr-3 lg:mr-0 md:mt-0 ml-6" data-aos="fade-left">
           <div className="flex flex-col items-end space-y-4">
             <a
               href="https://www.linkedin.com/in/nikhilkumarbn/"
@@ -148,10 +150,11 @@ const Home = () => {
       <div className="md:hidden w-full">
         {/* Text content */}
         <div className="p-4 text-center mt-3">
-          <h2 className="text-4xl text-[#287676] font-bold">Welcome to my portfolio</h2>
+          <h2 className="text-4xl text-[#287676] font-bold" data-aos="fade-right fade-up">Welcome to my portfolio</h2>
           <motion.h1
             className="text-3xl text-[#287676] font-semibold mt-3 animate-bounce "
             whileHover={{ scale: 1.2 }}
+            data-aos="fade-left"
             whileTap={{ scale: 1 }}
           >
             Hi,I'm Nikhil Kumar B N
@@ -166,6 +169,7 @@ const Home = () => {
                   animate="visible"
                   transition={{ duration: 0.5, delay: wordIndex * 0.2 }}
                   className={`text-xl text-[#287676] font-semibold mt-3 `}
+                  data-aos="fade-left fade-up"
                 >
                   {word}
                   {wordIndex !== roles[index].split(" ").length - 1 && " "}
@@ -176,6 +180,7 @@ const Home = () => {
             {textArray.map((word, index) => (
               <span
                 key={index}
+                data-aos="fade-left fade-up"
                 className={`inline-block ml-1 ${
                   showText
                     ? "transition-transform duration-500 transform translate-x-0"

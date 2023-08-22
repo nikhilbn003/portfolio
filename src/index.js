@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css'; 
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+AOS.init();
 root.render(
   <React.StrictMode>
     <App />
