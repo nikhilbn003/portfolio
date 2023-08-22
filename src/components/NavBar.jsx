@@ -25,33 +25,33 @@ const handleLinkClick = (section) => {
 
   
   return (
-    <nav className="bg-white text-gray-700 shadow-md fixed top-0 left-0 right-0 z-10 rounded-lg">
+    <nav className="bg-white text-[#287676] shadow-md fixed top-0 left-0 right-0 z-10 rounded-lg">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a href="/" className="text-2xl font-semibold flex items-center mr-4 animate-pulse">
+      <button onClick={() => handleLinkClick('home')} className={`text-2xl font-semibold flex items-center mr-4 animate-pulse  ${activeSection === 'home' ? 'active' : ''}`}>
           Nikhil 
-        </a>
+          </button>
         <div className="space-x-4">
           <button
             onClick={() => handleLinkClick('home')}
-            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'home' ? 'active' : ''}`}
+            className={`text-sm font-medium hover:text-[#264e4e] ${activeSection === 'home' ? 'active' : ''}`}
           >
             Home
           </button>
           <button
             onClick={() => handleLinkClick('about')}
-            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'about' ? 'active' : ''}`}
+            className={`text-sm font-medium hover:text-[#264e4e] ${activeSection === 'about' ? 'active' : ''}`}
           >
             About
           </button>
           <button
             onClick={() => handleLinkClick('skills')}
-            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'skills' ? 'active' : ''}`}
+            className={`text-sm font-medium hover:text-[#264e4e] ${activeSection === 'skills' ? 'active' : ''}`}
           >
             Skills
           </button>
           <button
             onClick={() => handleLinkClick('contact')}
-            className={`text-sm font-medium hover:text-gray-300 ${activeSection === 'contact' ? 'active' : ''}`}
+            className={`text-sm font-medium hover:text-[#264e4e] ${activeSection === 'contact' ? 'active' : ''}`}
           >
             Contact
           </button>
