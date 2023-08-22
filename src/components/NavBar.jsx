@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
@@ -25,7 +26,7 @@ const handleLinkClick = (section) => {
 
   
   return (
-    <nav className="bg-white text-[#287676] shadow-md fixed top-0 left-0 right-0 z-10 rounded-lg">
+    <nav className="bg-white text-[#287676] shadow-md fixed top-0 left-0 right-0 z-20 rounded-lg">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
       <button onClick={() => handleLinkClick('home')} className={`text-3xl font-bold flex items-center mr-4 animate-pulse  ${activeSection === 'home' ? 'active' : ''}`} data-aos="flip-up">
           Nikhil 

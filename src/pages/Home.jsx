@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setShowText(true); // Trigger the animation for roles when component mounts
+    setShowText(true); 
   }, []);
 
   useEffect(() => {
@@ -47,13 +47,9 @@ const Home = () => {
     "and I love what I do.",
   ];
 
-  const roleVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 },
-  };
-
+  
   return (
-    <div className="container mx-auto mt-36 mb-20" id="home">
+    <div className="container mx-auto mt-36 mb-20 max-w-screen-xl" id="home">
       <div className="md:flex md:flex-row md:justify-center md:items-center">
         {/* Left section for text content */}
         <div className="md:w-1/2 md:order-2">
@@ -75,7 +71,7 @@ const Home = () => {
                 roles[index].split(" ").map((word, wordIndex) => (
                   <motion.span
                     key={wordIndex}
-                    variants={roleVariants}
+                    
                     initial="hidden"
                     animate="visible"
                     transition={{ duration: 0.5, delay: wordIndex * 0.2 }}
@@ -147,7 +143,7 @@ const Home = () => {
       </div>
 
       {/* Mobile layout: image at the top */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden w-full overflow-x-hidden">
         {/* Text content */}
         <div className="p-4 text-center mt-3">
           <h2 className="text-4xl text-[#287676] font-bold" data-aos="fade-right fade-up">Welcome to my portfolio</h2>
@@ -164,7 +160,7 @@ const Home = () => {
               roles[index].split(" ").map((word, wordIndex) => (
                 <motion.span
                   key={wordIndex}
-                  variants={roleVariants}
+                 
                   initial="hidden"
                   animate="visible"
                   transition={{ duration: 0.5, delay: wordIndex * 0.2 }}
