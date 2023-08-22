@@ -17,6 +17,7 @@ const About = () => {
         <a
           href="/resume/Nikhil_resume.pdf"
           download="Nikhil_CV.pdf"
+          data-aos="fade-left"
           className="bg-[#287676] hover:bg-[#446363] text-white px-5 py-3 rounded-full transition-colors mr-2"
         >
           Download CV
@@ -41,7 +42,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex justify-center mb-6 space-x-4">
+      <div className="flex justify-center mb-6 space-x-4" data-aos="fade-up">
         <button
           className={`text-lg font-semibold focus:outline-none relative ${
             activeTab === "education"
@@ -75,7 +76,7 @@ const About = () => {
         </button>
       </div>
 
-      <div className="bg-white rounded-lg p-6">
+      <div className="bg-white rounded-lg p-6" data-aos="fade-up">
         {activeTab === "education" && (
           <div className="grid grid-cols-2 gap-6">
             <div>
