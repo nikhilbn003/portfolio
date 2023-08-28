@@ -76,7 +76,7 @@ const ContactForm = () => {
           <h2 className="text-2xl text-[#287676] font-bold mb-4">
             Get in Touch
           </h2>
-          <form onSubmit={handleSubmit}>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="name"
