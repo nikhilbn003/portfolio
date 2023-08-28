@@ -2,10 +2,12 @@ import React from "react";
 import photo from "../images/photo.png";
 import ContactForm from "../components/contactForm";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import Footer from "../components/footer";
 
 const Contact = () => {
   return (
-    <div className="h-screen" id="contact">
+    <>
+    <div className="h-auto mb-6" id="contact">
       <div className="flex flex-col md:flex-row" data-aos="fade-up">
         <div className="w-full md:w-1/2 bg-[#d3e1e8] p-10 rounded-3xl ml-4">
           <div className="md:flex md:flex-col md:items-center mb-4">
@@ -26,11 +28,11 @@ const Contact = () => {
               />
               <p className="mt-10">
                 <span className=" text-[#287676] font-semibold">Email:</span>
-                <a href="mailto:nikhilbn003@gmail.com" className="ml-1">nikhilbn003@gmail.com</a>
+                <a href="mailto:nikhilbn003@gmail.com" className="ml-1 underline">nikhilbn003@gmail.com</a>
               </p>
               <p className="mt-4 ">
               <span className=" text-[#287676] font-semibold">Phone:</span>
-                 <a href="tel:+919071188224" className="ml-1">+91 9071188224</a>
+                 <a href="tel:+919071188224" className="ml-1 underline">+91 9071188224</a>
               </p>
               <div className="flex justify-center mt-12">
                 <a
@@ -53,8 +55,12 @@ const Contact = () => {
           </div>
         </div>
         <ContactForm />
+       
       </div>
+     
     </div>
+    <Footer/>
+    </>
   );
 };
 
