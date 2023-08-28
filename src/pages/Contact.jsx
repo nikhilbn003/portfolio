@@ -4,19 +4,10 @@ const Contact = () => {
   return (
     <div className="h-screen" id="contact">
       <div className="flex flex-col md:flex-row" data-aos="fade-up">
-        {/* Left side box */}
-        {/* <div className="w-full md:w-1/2 bg-gray-200 p-10">
-          <h2 className="text-2xl text-[#287676] font-bold mb-4">
-            Contact Information
-          </h2>
-          <p>Email: </p>
-          <p>Phone: </p>
-         
-        </div> */}
-
-<div className="w-full md:w-1/2 bg-gray-200 p-10">
+  
+<div className="w-full md:w-1/2 bg-[#d3e1e8] p-10 rounded-3xl ml-4">
   <div className="md:flex md:flex-col md:items-center mb-4">
-    {/* Image on larger screens */}
+    
     <img
       src="/path/to/your/image.png"
       alt="Contact"
@@ -27,11 +18,10 @@ const Contact = () => {
       <h2 className="text-2xl text-[#287676] font-bold">Contact Information</h2>
       <p>Email: </p>
       <p>Phone: </p>
-      {/* You can add more contact information here */}
     </div>
   </div>
 
-  {/* Image on smaller screens */}
+  
   <img
     src="/path/to/your/image.png"
     alt="Contact"
@@ -39,8 +29,6 @@ const Contact = () => {
   />
 </div>
 
-
-        {/* Right side form */}
         <div className="w-full md:w-1/2 p-10" data-aos="fade-up">
           <h2 className="text-2xl text-[#287676] font-bold mb-4">
             Get in Touch
