@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 const About = () => {
-  const [activeTab, setActiveTab] = useState("education");
+  const [activeTab, setActiveTab] = useState("experience");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -43,21 +43,7 @@ const About = () => {
       </div>
 
       <div className="flex justify-center mb-6 space-x-4" data-aos="fade-up">
-        <button
-          className={`text-lg font-semibold focus:outline-none relative ${
-            activeTab === "education"
-              ? "text-[#287676] font-bold text-lg"
-              : "text-gray-500"
-          }`}
-          onClick={() => handleTabClick("education")}
-        >
-          Education
-          <span
-            className={`absolute left-0 right-0 bottom-0 h-1 bg-[#287676] ${
-              activeTab === "education" ? "opacity-100" : "opacity-0"
-            } transition-opacity`}
-          ></span>
-        </button>
+        
 
         <button
           className={`text-lg font-semibold  focus:outline-none relative ${
@@ -71,6 +57,22 @@ const About = () => {
           <span
             className={`absolute left-0 right-0 bottom-0 h-1 bg-[#287676] ${
               activeTab === "experience" ? "opacity-100" : "opacity-0"
+            } transition-opacity`}
+          ></span>
+        </button>
+
+        <button
+          className={`text-lg font-semibold focus:outline-none relative ${
+            activeTab === "education"
+              ? "text-[#287676] font-bold text-lg"
+              : "text-gray-500"
+          }`}
+          onClick={() => handleTabClick("education")}
+        >
+          Education
+          <span
+            className={`absolute left-0 right-0 bottom-0 h-1 bg-[#287676] ${
+              activeTab === "education" ? "opacity-100" : "opacity-0"
             } transition-opacity`}
           ></span>
         </button>
@@ -108,7 +110,7 @@ const About = () => {
                 MERN STACK Developer 
               </h3>
               <p className="text-gray-600 text-center mt-10 lg:mt-0">
-              I have been employed as a MERN Stack Developer at Bhive Alts starting from October 2022 and continuing to the present day.
+              I have been employed as a MERN Stack Developer at Bhive Alts starting from <span className="text-[#287676] font-semibold"> October 2022 </span>  and continuing to the present day.
               </p>
             </div>
             <div className="relative">

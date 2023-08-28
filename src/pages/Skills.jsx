@@ -75,23 +75,23 @@ const Skills = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5  gap-4  mt-8">
-       <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-up">
+       <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-left">
           <img src="/images/react-1.svg" alt="Front-end" className="rounded-full h-24 w-24" />
-          <p className='mb-6 ml-5'>React js</p>
+          <p className='mb-6 ml-5 font-semibold mt-1'>React js</p>
         </div>
-        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-up">
+        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-left">
           <img src="/images/redux.jpeg" alt="Front-end" className="rounded-full h-24 w-24" />
-          <p className='mb-6 ml-5'>Redux</p>
+          <p className='mb-6 ml-5 font-semibold mt-1'>Redux</p>
         </div>
-        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-up">
+        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-left">
           <img src="/images/node.png" alt="Front-end" className="rounded-full h-24 w-24" />
-          <p className='mb-6 ml-4'>Node JS </p>
+          <p className='mb-6 ml-5 font-semibold mt-1'>Node JS </p>
         </div>
-        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-up">
+        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-left">
           <img src="/images/mongo.png" alt="Back-end" className="rounded-full h-24 w-24" />
-          <p className='mb-6 ml-4'>Mongo DB</p>
+          <p className='mb-6 ml-4 font-semibold mt-1'>Mongo DB</p>
         </div>
-        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-up">
+        <div className="bg-white rounded-full mx-auto  h-24 w-24 shadow-md mt-4 lg:mt-0" data-aos="fade-left">
           <img src="/images/awslogo.png" alt="Cloud" className="rounded-full h-24 w-24" />
           <p className='mb-6 ml-7'>AWS</p>
         </div>
