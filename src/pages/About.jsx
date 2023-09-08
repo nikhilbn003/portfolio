@@ -16,7 +16,7 @@ const About = () => {
         </h2>
         <a
           href="/resume/Nikhil_resume.pdf"
-          download="Nikhil_CV.pdf"
+          download="Nikhil's--Resume.pdf"
           data-aos="fade-left"
           className="bg-[#287676] hover:bg-[#446363] text-white px-5 py-3 rounded-full transition-colors mr-2"
         >
